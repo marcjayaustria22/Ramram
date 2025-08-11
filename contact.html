@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cess Balot | Contact</title>
+  <link rel="icon" type="image/png" href="cess.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    :root {
+      --bg: linear-gradient(to right, #ffdde1, #ee9ca7);
+      --accent: #ff6f61;
+      --dark: #333;
+      --light: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav {
+      display: flex;
+      gap: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      width: fit-content;
+      backdrop-filter: blur(5px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      color: var(--dark);
+      transition: all 0.3s ease;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--light);
+      transform: translateY(-2px);
+    }
+    .profile {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid var(--light);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+    .profile h1 {
+      font-size: 2rem;
+      color: #ff4e50;
+      margin-top: 0.5rem;
+    }
+    .profile p {
+      font-weight: bold;
+    }
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      gap: 0.8rem;
+    }
+    .links-container a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      padding: 0.8rem 1rem;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--dark);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .links-container a:hover {
+      background: var(--accent);
+      color: var(--light);
+      transform: translateY(-3px);
+    }
+    
+    .contact-section {
+      max-width: 600px;
+      margin: 3rem auto 4rem;
+      background: rgba(255,255,255,0.75);
+      padding: 2rem 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      font-size: 1rem;
+    }
+    .contact-section h2 {
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 18px;
+    }
+    td {
+      vertical-align: middle;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 6px;
+      min-width: 110px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      background: transparent;
+      color: var(--dark);
+      font-size: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      outline-offset: 3px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(51, 51, 51, 0.4); 
+      font-style: italic;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: var(--dark);
+      box-shadow: 0 0 8px var(--accent);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .send-btn {
+      display: block;
+      width: 100%;
+      background-color: var(--accent);
+      color: var(--light);
+      border: none;
+      border-radius: 999px;
+      padding: 14px 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255,111,97,0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .send-btn:hover {
+      background-color: #e85c53;
+      box-shadow: 0 8px 20px rgba(232, 92, 83, 0.8);
+    }
+    @media (max-width: 480px) {
+      .contact-section {
+        padding: 1.5rem 1.5rem;
+      }
+      label {
+        min-width: 90px;
+        font-size: 0.9rem;
+      }
+      .send-btn {
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="resume.html">Resume</a>
+</nav>
+
+<div class="profile">
+  <img src="cess.jpg" alt="Cess">
+  <h1>Hi, I'm Princess!</h1>
+  <p>Check out my links!</p>
+</div>
+
+<div class="links-container">
+  <a href="https://www.facebook.com/profile.php?id=61579178966211" target="_blank">
+    <i data-feather="facebook"></i> Facebook: Cess Rham Graham Balot
+  </a>
+  <a href="https://www.instagram.com/cessxcx/" target="_blank">
+    <i data-feather="instagram"></i> Instagram: cessxcx
+  </a>
+  <a href="mailto:princessrhambalot@gmail.com">
+    <i data-feather="mail"></i> Email: princessrhambalot@gmail.com
+  </a>
+</div>
+
+<section class="contact-section">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <table>
+      <tr>
+        <td><label for="name">Full Name</label></td>
+        <td><input type="text" id="name" name="name" placeholder="Your full name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email Address</label></td>
+        <td><input type="email" id="email" name="email" placeholder="Your email address" required></td>
+      </tr>
+      <tr>
+        <td><label for="message">Your Message</label></td>
+        <td><textarea id="message" name="message" placeholder="Write your message here..." required></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit" class="send-btn">Send Message</button></td>
+      </tr>
+    </table>
+  </form>
+</section>
+
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

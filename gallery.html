@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cess Balot | Gallery</title>
+<link rel="icon" type="image/png" href="cess.jpg">
+
+<style>
+:root {
+  --bg: linear-gradient(to right, #ffdde1, #ee9ca7);
+  --accent: #ff6f61;
+  --dark: #333;
+  --light: #fff;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  width: fit-content;
+  margin: 2rem auto;
+  backdrop-filter: blur(5px);
+}
+nav a {
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  color: var(--dark);
+  transition: 0.3s;
+  border-radius: 999px;
+  font-weight: 500;
+}
+nav a:hover {
+  background: var(--accent);
+  color: var(--light);
+  transform: translateY(-2px);
+}
+
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+header p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+footer {
+  background: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="resume.html">Resume</a>
+</nav>
+
+
+<header>
+  <h1>Welcome to My Gallery</h1>
+  <p>This is where I put every important person in my life.</p>
+</header>
+
+
+<div class="gallery">
+  <img src="PHOTO1.jpg" alt="">
+  <img src="PHOTO2.jpg" alt="">
+  <img src="PHOTO3.jpg" alt="">
+  <img src="PHOTO4.jpg" alt="">
+  <img src="PHOTO5.jpg" alt="">
+  <img src="PHOTO6.jpg" alt="">
+  <img src="PHOTO7.jpg" alt="">
+  <img src="PHOTO8.jpg" alt="">
+  <img src="PHOTO9.jpg" alt="">
+  <img src="PHOTO10.jpg" alt="">
+  <img src="PHOTO11.jpg" alt="">
+  <img src="PHOTO12.jpg" alt="">
+  <img src="PHOTO13.jpg" alt="">
+  <img src="PHOTO14.jpg" alt="">
+  <img src="PHOTO15.jpg" alt="">
+  <img src="PHOTO16.jpg" alt="">
+  <img src="PHOTO17.jpg" alt="">
+  <img src="PHOTO18.jpg" alt="">
+  <img src="PHOTO19.jpg" alt="">
+  <img src="PHOTO20.jpg" alt="">
+  <img src="PHOTO21.jpg" alt="">
+  <img src="PHOTO22.jpg" alt="">
+  <img src="PHOTO23.jpg" alt="">
+  <img src="PHOTO24.jpg" alt="">
+  <img src="PHOTO25.jpg" alt="">
+  <img src="PHOTO26.jpg" alt="">
+  <img src="PHOTO27.jpg" alt="">
+  <img src="PHOTO28.jpg" alt="">
+</div>
+
+
+<footer>
+  &copy; 2025 Cess Balot. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="icon" type="img/png" href="cess.jpg">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cess Balot | Resume</title>
+  <style>
+    :root {
+      --bg: linear-gradient(to right, #ffdde1, #ee9ca7);
+      --accent: #ff6f61;
+      --dark: #333;
+      --light: #ffffff;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+
+    nav {
+      position: relative;
+      display: flex;
+      gap: 0.5rem;
+      z-index: 10;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      width: fit-content;
+      max-width: 90%;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    nav a {
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      color: var(--dark);
+      transition: all 0.3s ease;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--light);
+      transform: translateY(-2px);
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.527);
+      padding: 1rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #ff9aa2;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #ff4e50;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    section {
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    section h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .profile-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 4.9rem auto;
+  padding: 1 2rem;
+}
+
+.about-container {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.profile-photo {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+border: 4px solid var(--light);
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+margin: 1rem auto;
+object-fit: cover;
+display: block;
+transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+transform: scale(1.05);}
+
+
+    footer {
+        
+      background-color: #ffffff88 ;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+ <h1 style= "text-align:center">RESUME</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+	<a href="resume.html">Resume</a>
+  </nav>
+  
+ <section id="resume">
+
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .resume-section {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .resume-section h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .resume-content {
+      line-height: 1.8;
+    }
+
+    .resume-item {
+      margin-bottom: 25px;
+    }
+
+    .resume-item h3 {
+      margin: 0;
+      color: #005299;
+    }
+
+    .resume-item p {
+      margin: 5px 0 0 0;
+      color: #444;
+    }
+
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      padding: 12px 20px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .download-btn:hover {
+      background-color: #005299;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
+
+<html>
+<title>MY RESUME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  
+  <div class="w3-row-padding">
+  
+   
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="cess.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+         
+          </div>
+        </div>
+        <div class="w3-container">
+<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
+<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>princessrhambalot@gmail.com</p>
+<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>09989107454</p>
+<hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Visual Basic</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>Portuguese</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    
+    </div>
+
+    
+<div class="w3-twothird">
+
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+<h2 class="w3-text-grey w3-padding-16"><i w3-margin-right w3-xxlarge w3-text-teal"></i>Princess Rham Balot</h2>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Student / CMRICTHS</b></h5>
+<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>S.Y 2025-2026 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+<p>Hi! I'm Princess and im a student who want's to exploxe the Tech Industry</p>
+<hr>
+</div>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Student Body President</b></h5>
+<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Grade 5 to Grade 6</h6>
+<p>I was the student body president of my school by having a knowledge far more beyond my age.</p>
+<hr>
+</div>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Supreme Secondary Learners Government (SSLG)</b></h5>
+<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Grade 4 to Grade 5</h6>
+<p> I was a treasurer during these times and im well capable of handling financial. </p><br>
+</div>
+</div>
+
+<div class="w3-container w3-card w3-white">
+<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Claro M. Recto ICT High School</b></h5>
+<p>Web Development! THis is where i learned it all from Visual Bsic to Html.  All I need to know in one place</p>
+<hr>
+</div>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Cutud Elementary Scshool</b></h5>
+<p>Grade 5 to Grade 6</p>
+<hr>
+</div>
+<div class="w3-container">
+<h5 class="w3-opacity"><b>Northville 15 Integrated School</b></h5>
+<h6 class="w3-text-lavender"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+<p>From Kinder to Grade 4</p><br>
+</div>
+</div>
+
+
+</div>
+    
+  
+  </div>
+  
+  
+</div>
+
+<footer class="w3-container w3-lavender w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>

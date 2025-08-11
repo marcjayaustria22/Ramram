@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cess Balot | About</title>
+  <link rel="icon" type="image/png" href="cess.jpg">
+  <style>
+    :root {
+      --bg: linear-gradient(to right, #ffdde1, #ee9ca7);
+      --accent: #ff6f61;
+      --dark: #333;
+      --light: #ffffff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav {
+      display: flex;
+      gap: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      width: fit-content;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    nav a {
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      color: var(--dark);
+      transition: all 0.3s ease;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--light);
+      transform: translateY(-2px);
+    }
+    header {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #ff4e50;
+    }
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    .profile-photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 5px solid var(--light);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+    .about-container {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .about-container h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .game-slider {
+      max-width: 1000px;
+      margin: 2rem auto;
+      overflow: hidden;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .slider-track {
+      display: flex;
+      animation: scroll 20s linear infinite;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .slider-track img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .playlist {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .playlist h2 {
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .playlist-grid a img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .playlist-grid a img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+
+  <header>
+    <h1>ABOUT</h1>
+  </header>
+
+  <section class="profile-container">
+    <img src="cess.jpg" alt="Princess Rham G. Balot" class="profile-photo">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>Hello! My name is <b>Princess Rham G. Balot</b> and I am <strong>16 almost 17 years old</strong>.<br>
+      I live in <i>Brgy. Cutud, Angeles City</i> with my family, and I have two sisters — one older and one younger.<br>
+      I am currently in <em>Grade 10 at Claro M. Recto ICT High School</em>.<br>
+      I have a lot of hobbies including following Formula 1, supporting Girl’s Football, and more.<br>
+      I have always been a fan of cars and fell in love with the movie series <b>"Fast and The Furious Saga"</b>. 💫</p>
+    </div>
+  </section>
+
+  <section class="game-slider">
+    <div class="slider-track">
+      <img src="roblox.jpg" alt="Roblox">
+      <img src="call of duty.jpg" alt="Call of Duty">
+      <img src="clash of clans.jpg" alt="Clash of Clans">
+      <img src="mobile legends.jpg" alt="Mobile Legends">
+      <img src="valorant.jpg" alt="Valorant">
+      <img src="plants vs zombie 2.jpg" alt="Plants vs Zombie 2">
+      <img src="angry bird.jpg" alt="Angry Bird">
+      <img src="coockie montser.jpg" alt="Cookie Monster">
+      <img src="roblox.jpg" alt="Roblox">
+      <img src="call of duty.jpg" alt="Call of Duty">
+    </div>
+  </section>
+
+  <section class="playlist">
+    <h2>🎵 My favorite songs</h2>
+    <div class="playlist-grid">
+      <a href="https://www.youtube.com/watch?v=58xKTGxmeHI" target="_blank"><img src="nohands.jpg" alt="No Hands"></a>
+      <a href="https://www.youtube.com/watch?v=GX8Hg6kWQYI" target="_blank"><img src="themorning.jpg" alt="The Morning"></a>
+      <a href="https://www.youtube.com/watch?v=S9bCLPwzSC0" target="_blank"><img src="backtofriends.jpg" alt="Back to Friends"></a>
+      <a href="https://www.youtube.com/watch?v=i_kF4zLNKio" target="_blank"><img src="12 to 12.jpg" alt="12 to 12"></a>
+      <a href="https://www.youtube.com/watch?v=Wa5B22KAkEk" target="_blank"><img src="hitemup.jpg" alt="Hit Em Up"></a>
+      <a href="https://www.youtube.com/watch?v=41qC3w3UUkU" target="_blank"><img src="youngwild.jpg" alt="Young Wild"></a>
+      <a href="https://www.youtube.com/watch?v=cZgUiR31m-Y" target="_blank"><img src="Fetty_Wap_-_Trap_Queen.jpg" alt="Trap Queen"></a>
+      <a href="https://www.youtube.com/watch?v=fOQ_-gZsnYQ" target="_blank"><img src="mockingbird.jpg" alt="Mockingbird"></a>
+      <a href="https://www.youtube.com/watch?v=5TAko3RH0bk" target="_blank"><img src="moonlight.jpg" alt="Moonlight"></a>
+      <a href="https://www.youtube.com/watch?v=skhxizRYxps" target="_blank"><img src="hope.jpg" alt="Hope"></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Princess's Web Page
+  </footer>
+
+</body>
+</html>
